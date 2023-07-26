@@ -1,0 +1,4 @@
+baseURL = 'http://blog.maengkkongi.site/'
+languageCode = 'ko-kr'
+title = '맹꽁이의 블로그'
+theme = 'holy'
