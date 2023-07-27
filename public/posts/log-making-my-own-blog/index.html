@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Hugo로 개인 블로그 만들기 - 맹꽁이의 블로그</title>
+
+    
+    
+    <meta name="description" content="블로그를 만들게 된 계기 (조금 긴, TMI 같은 내용입니다.) 제 첫 글에서도 말했다시피, 저는 원래 티스토리를 하고 있었습니다.
+하지만 브라우저를 Brave로 바꾼 후 티스토리에 로그인하려고 하였으나 로그인 페이지로 넘어가지 않는 버그가 발생했습니다.
+곧바로 카카오에 문의했으나, 지금까지 답변이 없습니다.
+그래서 어차피 카카오 좋아하지도 않는데 다른 블로그로 이주하자 결심했습니다.
+세상에는 티스토리 말고도 블로그 서비스들이 많습니다.
+(망한)네이버 블로그, 구글 블로거 등이 있죠.
+이 외에도 많은데 자세히 알아보지는 않았습니다.
+그러다 문득 이런 생각이 들었습니다." />
+    <meta name="author" content="" />
+    
+
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
+
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style></head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              맹꽁이의 블로그
+              
+            </a>
+        </div>
+
+        <div class="ml:auto">
+            
+            
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">Hugo로 개인 블로그 만들기</div>
+        <div class="mt:16 f:fade-60">
+            <time>Jul 26, 2023</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><h2 id="블로그를-만들게-된-계기-조금-긴-tmi-같은-내용입니다">블로그를 만들게 된 계기 (조금 긴, TMI 같은 내용입니다.)</h2>
+<p>제 첫 글에서도 말했다시피, 저는 원래 티스토리를 하고 있었습니다.<br>
+하지만 브라우저를 Brave로 바꾼 후 티스토리에 로그인하려고 하였으나 로그인 페이지로 넘어가지 않는 버그가 발생했습니다.<br>
+곧바로 카카오에 문의했으나, 지금까지 답변이 없습니다.<br>
+그래서 어차피 카카오 좋아하지도 않는데 다른 블로그로 이주하자 결심했습니다.</p>
+<p>세상에는 티스토리 말고도 블로그 서비스들이 많습니다.<br>
+(망한)네이버 블로그, 구글 블로거 등이 있죠.<br>
+이 외에도 많은데 자세히 알아보지는 않았습니다.<br>
+그러다 문득 이런 생각이 들었습니다.</p>
+<blockquote>
+<p>개인 블로그를 만들어볼까?</p>
+</blockquote>
+<p>개인 블로그는 개발 지식이 조금 필요하다는 것 말고는 딱히 단점이 없었습니다.<br>
+아, 단점 하나 더 있네요. 서버가 필요합니다.<br>
+워드프레스같은 CMS를 이용하거나 직접 블로그를 개설하려면 서버가 필요하죠.<br>
+저는 학생이고 서버를 구매하거나 가성 서버를 이용할 여력이 없기에, 포기할 수 밖에 없었습니다.</p>
+<p>그러다 우연히 깃허브 페이지와 정적 사이트 생성기로 블로그를 만든다는 글을 봤습니다.<br>
+저는 코린이고 정적 사이트 생성기가 무엇인지 그 글을 보고 알았습니다.<br>
+그리고 그게 굉장히 좋은 아이디어라고 생각하며 블로그를 만들게 되었습니다.</p>
+<h2 id="정적-사이트-생성기가-뭐야">정적 사이트 생성기가 뭐야</h2>
+<p>정적 사이트 생성기는 정적 HTML 페이지를 만들어주는 도구입니다.<br>
+보통 React나 Vue.js 또는 마크다운을 이용합니다.<br>
+정적 사이트 생성기에는 많은 종류가 있습니다.<br>
+서버 사이드 렌더링 프레임워크로 알려진 Next.js, Nuxt.js, Sveltkit 등이 정적 사이트 생성기 기능을 지원하고<br>
+Go로 작성된 Hugo, 루비로 작성된 Jekyll 등 종류가 많습니다.<br>
+그 중에서 저는 Hugo를 이용할 것입니다.<br>
+Hugo를 이용하는 이유를 말하자면&hellip; 속도가 빠르다고 하고, 또 왠지 모를 Go 언어에 대한 애정 때문입니다.</p>
+<h2 id="hugo로-블로그-만들기">Hugo로 블로그 만들기</h2>
+<p>Hugo로 블로그를 만드는 방법은 매우 간단합니다.<br>
+그렇기 때문에 이 글에서도 간단히 알려드리겠습니다.<br>
+저는 <a href="https://gohugo.io/getting-started/quick-start/">이 글</a>을 참고하였습니다.</p>
+<ol>
+<li>
+<p>Hugo 설치<br>
+<a href="https://gohugo.io/installation/">Hugo 다운로드 페이지</a>에서 Hugo를 설치합니다.</p>
+</li>
+<li>
+<p>git 설치<br>
+Hugo를 이용하는데는 반드시 git이 필요합니다.<br>
+대부분 설치하셨겠지만, 아니라면 꼭 설치하세요.</p>
+</li>
+<li>
+<p>블로그를 만들 디렉토리에서 <code>hugo new site &lt;사이트 이름&gt;</code> 명령어로 Hugo 사이트를 생성합니다.</p>
+</li>
+<li>
+<p><a href="https://themes.gohugo.io/">Hugo 테마 다운로드 사이트</a>에서 원하는 테마를 선택하세요.</p>
+</li>
+<li>
+<p><code>git init</code>로 저장소를 초기화하고 <code>git submodule add https://github.com/luizdepra/&lt;테마의 깃허브 저장소 이름&gt;.git themes/&lt;테마의 깃허브 저장소 이름&gt;</code> 명령어로 테마를 추가합니다.<br>
+저는 여기서 저장소 초기화를 빼먹어서 한참 애먹었습니다&hellip;</p>
+</li>
+<li>
+<p><code>hugo.toml</code> 파일을 다음과 같이 수정하세요.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;&lt;블로그 도메인, 아직 없다면 일단 기본값으로 냅두세요&gt;&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;ko-kr&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;&lt;블로그 이름&gt;&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#39;&lt;테마 저장소 이름&gt;&#39;</span>
+</span></span></code></pre></div><ol start="7">
+<li>
+<p><code>hugo server</code> 명령어로 블로그 로컬 서버를 열어보세요. 컨트롤 + C로 닫습니다.</p>
+</li>
+<li>
+<p><code>hugo</code> 명령어로 블로그를 정적 사이트로 빌드하세요.</p>
+</li>
+</ol>
+<p>여기까지 따라오셨다면, 블로그를 배포할 준비가 완료된 것입니다!<br>
+원하는 호스팅 방법으로 블로그를 배포하세요.<br>
+호스팅하는 방법은 많으므로, 여기서 설명하지는 않겠습니다.<br>
+저는 깃허브에 올리고 Vercel로 호스팅했습니다.</p>
+<h2 id="블로그-글-쓰기">블로그 글 쓰기</h2>
+<p>Hugo는 마크다운으로 사이트 내용을 만듭니다.</p>
+<ol>
+<li>
+<p><code>hugo new posts/&lt;글 제목&gt;.md</code> 명령어로 글을 만듭니다.<br>
+이때 글 제목은 실제 글 제목이 아니라 글 URL에 들어가는 제목입니다.<br>
+그래서 <code>first-post</code> 와 같이 쓰시는 것이 좋습니다.</p>
+</li>
+<li>
+<p><code>content/posts</code> 디렉토리의 만든 마크다운 파일을 들어가세요.</p>
+</li>
+<li>
+<p>이제 글을 작성할 것입니다.<br>
+이때, 마크다운의 문법을 알고 있어야 글을 쓸 수 있습니다.<br>
+대부분 알고 계실 것이지만, 혹시나 모르신다면 <a href="https://gist.github.com/ihoneymon/652be052a0727ad59601">이 글</a>을 참고하시면 되겠습니다.</p>
+</li>
+<li>
+<p>마크다운 위쪽에 이런 내용이 기본적으로 있을 것입니다.</p>
+</li>
+</ol>
+<pre tabindex="0"><code>---
+title: &#34;&lt;마크다운 파일 명&gt;&#34;
+date: 2022-11-20T09:03:20-08:00
+draft: true
+---
+</code></pre><p>여기서 <code>title</code>의 &lt;마크다운 파일 명&gt;을 블로그 제목으로 바꿔주시면 됩니다.<br>
+그리고 아래에 글을 써주시면 됩니다.</p>
+<ol start="5">
+<li>
+<p><code>hugo server -D</code> 명령어로 만든/바뀐 글을 업데이트하여 테스트 서버를 여세요.</p>
+</li>
+<li>
+<p><code>hugo -D</code> 명령어로 바뀐 글을 업데이트하여 빌드하세요.</p>
+</li>
+</ol>
+<h2 id="완성">완성!</h2>
+<p>저는 이렇게 블로그를 완성했습니다! 그게 여러분이 읽고있는 이 블로그이죠 :)<br>
+이제 댓글 기능도 추가하고&hellip; 할게 많네요 ㅎ<br>
+그럼 글을 마치겠습니다. 제 블로그에 관심 가져주셔서 감사합니다!</p>
+</div></article>
+<footer class="py:24">
+    <div class="f:fade-30 f:14 mb:8"></div>
+    <div class="f:fade-60 f:12">Theme <a class="f:bold" href="https://github.com/serkodev/holy" _target="_blank">Holy</a></div>
+</footer></div>
+    </div>
+</body>
+
+</html>
