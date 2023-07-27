@@ -2,6 +2,8 @@
 title: "Hugo로 개인 블로그 만들기"
 date: 2023-07-26T23:28:42+09:00
 draft: true
+categories: [dev]
+tags: [hugo, 개인 블로그, 정적 사이트 생성기]
 ---
 
 ## 블로그를 만들게 된 계기 (조금 긴, TMI 같은 내용입니다.)

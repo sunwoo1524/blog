@@ -5,6 +5,43 @@
     <link>http://blog.maengkkongi.site/tags/</link>
     <description>Recent content in Tags on 맹꽁이의 블로그</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko-kr</language><atom:link href="http://blog.maengkkongi.site/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 26 Jul 2023 23:28:42 +0900</lastBuildDate><atom:link href="http://blog.maengkkongi.site/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo</title>
+      <link>http://blog.maengkkongi.site/tags/hugo/</link>
+      <pubDate>Wed, 26 Jul 2023 23:28:42 +0900</pubDate>
+      
+      <guid>http://blog.maengkkongi.site/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>개인 블로그</title>
+      <link>http://blog.maengkkongi.site/tags/%EA%B0%9C%EC%9D%B8-%EB%B8%94%EB%A1%9C%EA%B7%B8/</link>
+      <pubDate>Wed, 26 Jul 2023 23:28:42 +0900</pubDate>
+      
+      <guid>http://blog.maengkkongi.site/tags/%EA%B0%9C%EC%9D%B8-%EB%B8%94%EB%A1%9C%EA%B7%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>정적 사이트 생성기</title>
+      <link>http://blog.maengkkongi.site/tags/%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%83%9D%EC%84%B1%EA%B8%B0/</link>
+      <pubDate>Wed, 26 Jul 2023 23:28:42 +0900</pubDate>
+      
+      <guid>http://blog.maengkkongi.site/tags/%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%83%9D%EC%84%B1%EA%B8%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hello world</title>
+      <link>http://blog.maengkkongi.site/tags/hello-world/</link>
+      <pubDate>Wed, 26 Jul 2023 22:43:41 +0900</pubDate>
+      
+      <guid>http://blog.maengkkongi.site/tags/hello-world/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

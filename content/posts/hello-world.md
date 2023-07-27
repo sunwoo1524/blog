@@ -2,6 +2,7 @@
 title: "Hello, world!"
 date: 2023-07-26T22:43:41+09:00
 draft: true
+tags: [hello world]
 ---
 
 안녕하세요.   

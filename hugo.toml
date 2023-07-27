@@ -2,3 +2,16 @@ baseURL = 'http://blog.maengkkongi.site/'
 languageCode = 'ko-kr'
 title = '맹꽁이의 블로그'
 theme = 'holy'
+
+# robots.txt
+enableRobotsTXT = true
+
+# sitemap 생성
+[sitemap]
+  changefreq = "daily"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"

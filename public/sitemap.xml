@@ -2,20 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://blog.maengkkongi.site/categories/</loc>
+    <lastmod>2023-07-26T23:28:42+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.maengkkongi.site/categories/dev/</loc>
+    <lastmod>2023-07-26T23:28:42+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.maengkkongi.site/tags/hugo/</loc>
+    <lastmod>2023-07-26T23:28:42+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://blog.maengkkongi.site/posts/log-making-my-own-blog/</loc>
     <lastmod>2023-07-26T23:28:42+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://blog.maengkkongi.site/posts/</loc>
     <lastmod>2023-07-26T23:28:42+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.maengkkongi.site/tags/</loc>
+    <lastmod>2023-07-26T23:28:42+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.maengkkongi.site/tags/%EA%B0%9C%EC%9D%B8-%EB%B8%94%EB%A1%9C%EA%B7%B8/</loc>
+    <lastmod>2023-07-26T23:28:42+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://blog.maengkkongi.site/</loc>
     <lastmod>2023-07-26T23:28:42+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.maengkkongi.site/tags/%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%83%9D%EC%84%B1%EA%B8%B0/</loc>
+    <lastmod>2023-07-26T23:28:42+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.maengkkongi.site/tags/hello-world/</loc>
+    <lastmod>2023-07-26T22:43:41+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://blog.maengkkongi.site/posts/hello-world/</loc>
     <lastmod>2023-07-26T22:43:41+09:00</lastmod>
-  </url><url>
-    <loc>http://blog.maengkkongi.site/categories/</loc>
-  </url><url>
-    <loc>http://blog.maengkkongi.site/tags/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

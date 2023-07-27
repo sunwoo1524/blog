@@ -5,6 +5,16 @@
     <link>http://blog.maengkkongi.site/categories/</link>
     <description>Recent content in Categories on 맹꽁이의 블로그</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko-kr</language><atom:link href="http://blog.maengkkongi.site/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 26 Jul 2023 23:28:42 +0900</lastBuildDate><atom:link href="http://blog.maengkkongi.site/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dev</title>
+      <link>http://blog.maengkkongi.site/categories/dev/</link>
+      <pubDate>Wed, 26 Jul 2023 23:28:42 +0900</pubDate>
+      
+      <guid>http://blog.maengkkongi.site/categories/dev/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

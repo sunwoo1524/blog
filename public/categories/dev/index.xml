@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dev on 맹꽁이의 블로그</title>
+    <link>http://blog.maengkkongi.site/categories/dev/</link>
+    <description>Recent content in dev on 맹꽁이의 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 26 Jul 2023 23:28:42 +0900</lastBuildDate><atom:link href="http://blog.maengkkongi.site/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo로 개인 블로그 만들기</title>
+      <link>http://blog.maengkkongi.site/posts/log-making-my-own-blog/</link>
+      <pubDate>Wed, 26 Jul 2023 23:28:42 +0900</pubDate>
+      
+      <guid>http://blog.maengkkongi.site/posts/log-making-my-own-blog/</guid>
+      <description>블로그를 만들게 된 계기 (조금 긴, TMI 같은 내용입니다.) 제 첫 글에서도 말했다시피, 저는 원래 티스토리를 하고 있었습니다.
+하지만 브라우저를 Brave로 바꾼 후 티스토리에 로그인하려고 하였으나 로그인 페이지로 넘어가지 않는 버그가 발생했습니다.
+곧바로 카카오에 문의했으나, 지금까지 답변이 없습니다.
+그래서 어차피 카카오 좋아하지도 않는데 다른 블로그로 이주하자 결심했습니다.
+세상에는 티스토리 말고도 블로그 서비스들이 많습니다.
+(망한)네이버 블로그, 구글 블로거 등이 있죠.
+이 외에도 많은데 자세히 알아보지는 않았습니다.
+그러다 문득 이런 생각이 들었습니다.</description>
+    </item>
+    
+  </channel>
+</rss>
