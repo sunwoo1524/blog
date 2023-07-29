@@ -14,12 +14,11 @@
     </header>
     {{- partial "prose.html" . -}}
     <script src="https://utteranc.es/client.js"
-        repo="sunwoo1524/blog-comment"
+        repo="[ENTER REPO HERE]"
         issue-term="pathname"
-        label="✨💬✨"
         theme="github-dark"
         crossorigin="anonymous"
         async>
-</script>
+    </script>
 </article>
 {{ end }}
