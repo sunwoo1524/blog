@@ -2,6 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://blog.maengkkongi.site/tags/fastapi/</loc>
+    <lastmod>2023-08-09T10:10:11+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.maengkkongi.site/posts/log-making-url-shortener-service/</loc>
+    <lastmod>2023-08-09T10:10:11+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.maengkkongi.site/tags/postgresql/</loc>
+    <lastmod>2023-08-09T10:10:11+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.maengkkongi.site/posts/</loc>
+    <lastmod>2023-08-09T10:10:11+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.maengkkongi.site/tags/react/</loc>
+    <lastmod>2023-08-09T10:10:11+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.maengkkongi.site/tags/</loc>
+    <lastmod>2023-08-09T10:10:11+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.maengkkongi.site/tags/url-shortener/</loc>
+    <lastmod>2023-08-09T10:10:11+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.maengkkongi.site/tags/url-%EB%8B%A8%EC%B6%95/</loc>
+    <lastmod>2023-08-09T10:10:11+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.maengkkongi.site/tags/%EB%8B%A8%EC%B6%95-%EB%8F%84%EB%A9%94%EC%9D%B8/</loc>
+    <lastmod>2023-08-09T10:10:11+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.maengkkongi.site/</loc>
+    <lastmod>2023-08-09T10:10:11+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://blog.maengkkongi.site/tags/hugo/</loc>
     <lastmod>2023-07-26T23:28:42+09:00</lastmod>
     <changefreq>daily</changefreq>
@@ -12,22 +62,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://blog.maengkkongi.site/posts/</loc>
-    <lastmod>2023-07-26T23:28:42+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://blog.maengkkongi.site/tags/</loc>
-    <lastmod>2023-07-26T23:28:42+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://blog.maengkkongi.site/tags/%EA%B0%9C%EC%9D%B8-%EB%B8%94%EB%A1%9C%EA%B7%B8/</loc>
-    <lastmod>2023-07-26T23:28:42+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://blog.maengkkongi.site/</loc>
     <lastmod>2023-07-26T23:28:42+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

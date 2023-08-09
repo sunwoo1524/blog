@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>FastAPI로 단축 도메인 서비스 만들기 - 맹꽁이의 블로그</title>
+
+    
+    
+    <meta name="description" content="단축 도메인 서비스를 만들었습니다.
+단축 도메인 서비스는 긴 URL을 짧은 URL에 연결시켜주는 서비스입니다.
+생각보다 로직이 간단해서 단축 도메인 기능 만들기는 쉬웠지만 제가 코린이인지라 개발 환경 세팅과 데이터베이스 연결, 배포 등 많은 시행착오가 있었습니다.
+기술 스택 Python, FastAPI PostgreSQL React 백엔드 백엔드는 FastAPI를 이용했습니다.
+Flask만큼 쉽고 간단한데다 더 빠르기 때문입니다.
+API 문서 자동으로 만들어주는 기능은 기가 막합니다.
+문서에서 API 테스트도 할 수 있습니다.
+데이터베이스는 PostgreSQL을 이용했습니다.
+배포는 도커를 이용했습니다.
+백엔드를 만들면서 가장 힘들었던 부분은 개발환경 세팅과 배포가 아니었을까 합니다." />
+    <meta name="author" content="" />
+    
+
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
+
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style><meta name="google-site-verification" content="LixOX7pzE6Xd2yaH8IHK_emqi3G0SINU_CgFNYcIc5A" />
+</head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              맹꽁이의 블로그
+              
+            </a>
+        </div>
+
+        <div class="ml:auto">
+            
+            
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">FastAPI로 단축 도메인 서비스 만들기</div>
+        <div class="mt:16 f:fade-60">
+            <time>Aug 9, 2023</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><p>단축 도메인 서비스를 만들었습니다.<br>
+단축 도메인 서비스는 긴 URL을 짧은 URL에 연결시켜주는 서비스입니다.<br>
+생각보다 로직이 간단해서 단축 도메인 기능 만들기는 쉬웠지만 제가 코린이인지라 개발 환경 세팅과 데이터베이스 연결, 배포 등 많은 시행착오가 있었습니다.</p>
+<h1 id="기술-스택">기술 스택</h1>
+<ul>
+<li>Python, FastAPI</li>
+<li>PostgreSQL</li>
+<li>React</li>
+</ul>
+<h1 id="백엔드">백엔드</h1>
+<p>백엔드는 FastAPI를 이용했습니다.<br>
+Flask만큼 쉽고 간단한데다 더 빠르기 때문입니다.<br>
+API 문서 자동으로 만들어주는 기능은 기가 막합니다.<br>
+문서에서 API 테스트도 할 수 있습니다.</p>
+<p>데이터베이스는 PostgreSQL을 이용했습니다.<br>
+배포는 도커를 이용했습니다.</p>
+<p>백엔드를 만들면서 가장 힘들었던 부분은 개발환경 세팅과 배포가 아니었을까 합니다.<br>
+이걸 만들면서 도커와 도커 컴포즈를 처음 접했습니다&hellip;!<br>
+데이터베이스도 굉장히 어려웠습니다.<br>
+개발환경 세팅하고 데이터베이스 연결하는데 대부분의 시간을 보낸 것 같습니다.</p>
+<h1 id="백엔드-메인-로직">백엔드 메인 로직</h1>
+<p>메인 로직은 간단합니다.</p>
+<ol>
+<li>데이터베이스에 랜덤한 문자열 키와 원본 URL을 저장한다.</li>
+<li>문자열 키는 <code>https://example.tld/&lt;문자열 키&gt;</code> 와 같이 단축된 링크에 사용된다.</li>
+<li>단축된 링크를 열면 문자열 키에 연결된 원본 URL을 데이터베이스에서 꺼내 리디렉트 시킨다.</li>
+</ol>
+<p>아래는 위의 로직이 있는 소스 코드의 일부입니다.<br>
+주석으로 설명을 넣었습니다.
+FastAPI를 이용했습니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># URL을 단축시켜 데이터베이스에 저장</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.post</span>(<span style="color:#e6db74">&#34;/api/urls&#34;</span>, response_model<span style="color:#f92672">=</span>schemas<span style="color:#f92672">.</span>ShortenedURL)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create</span>(url: schemas<span style="color:#f92672">.</span>URLToShorten, db: Session <span style="color:#f92672">=</span> Depends(get_db)):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 올바른 URL이 아니면 400 오류 반환</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> validators<span style="color:#f92672">.</span>url(url<span style="color:#f92672">.</span>url):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> HTTPException(status_code<span style="color:#f92672">=</span><span style="color:#ae81ff">400</span>, detail<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Invalid URL&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 데이터베이스에 있는 URL과 키 가져오기</span>
+</span></span><span style="display:flex;"><span>    shortened_url <span style="color:#f92672">=</span> crud<span style="color:#f92672">.</span>get_shortened_url(db, url<span style="color:#f92672">.</span>url)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> shortened_url <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>: <span style="color:#75715e"># 데이터베이스에 없다면 키를 새로 생성하고 데이터베이스에 저장</span>
+</span></span><span style="display:flex;"><span>        string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abcdefghijklmnopqrstuvwxyz&#34;</span>
+</span></span><span style="display:flex;"><span>        string <span style="color:#f92672">+=</span> string<span style="color:#f92672">.</span>upper()
+</span></span><span style="display:flex;"><span>        string <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;0123456789&#34;</span>
+</span></span><span style="display:flex;"><span>        string <span style="color:#f92672">=</span> string <span style="color:#f92672">*</span> KEY_LEN
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        key <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">.</span>join(random<span style="color:#f92672">.</span>sample(string, KEY_LEN))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 데이터베이스에 중복된 키가 있는지 확인</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> <span style="color:#f92672">not</span> crud<span style="color:#f92672">.</span>get_original_url(db, key) <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>            key <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">.</span>join(random<span style="color:#f92672">.</span>sample(string, KEY_LEN))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        shortened_url <span style="color:#f92672">=</span> crud<span style="color:#f92672">.</span>shorten_url(db, url<span style="color:#f92672">.</span>url, key)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;key&#34;</span>: key,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;original_url&#34;</span>: url<span style="color:#f92672">.</span>url
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> shortened_url
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 단축된 URL을 열었을 때 원래 URL로 리디렉트</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.get</span>(<span style="color:#e6db74">&#34;/</span><span style="color:#e6db74">{key}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">redirect</span>(key: str, db: Session <span style="color:#f92672">=</span> Depends(get_db)):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 데이터베이스에서 키에 맞는 URL 꺼내기</span>
+</span></span><span style="display:flex;"><span>    shortened_url <span style="color:#f92672">=</span> crud<span style="color:#f92672">.</span>get_original_url(db, key)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> shortened_url <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>: <span style="color:#75715e"># 데이터베이스에 없다면 404 오류 반환</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> HTTPException(status_code<span style="color:#f92672">=</span><span style="color:#ae81ff">404</span>, detail<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;URL is not found.&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 원래 URL을 301 리디렉트</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> RedirectResponse(shortened_url<span style="color:#f92672">.</span>original_url, status_code<span style="color:#f92672">=</span><span style="color:#ae81ff">301</span>)
+</span></span></code></pre></div><p>이 코드는 일부분이고 자세한 내용은 깃허브 저장소를 확인할 수 있습니다.<br>
+<a href="https://github.com/sunwoo1524/krll-backend">https://github.com/sunwoo1524/krll-backend</a></p>
+<h1 id="백엔드-배포">백엔드 배포</h1>
+<p>백엔드와 프론트엔드를 분리 개발했습니다.<br>
+그래서 배포 또한 백엔드는 GCP 프리 티어에서, 프론트엔드는 Vercel에서 했습니다.<br>
+프리 티어 VPS로 오라클 클라우드도 있는데 가입이 죽어도 안돼 포기했습니다.<br>
+가입이 안돼 문의 이메일을 남겼더니 꺼지라고 했다는 사람도 있는 거 보면 가입할 생각이 싹 사라집니다.<br>
+결국 GCP에도 평생 무료 서버가 있다는 것을 듣고 GCP를 선택했는데 얘는 자동 결제가 멋대로 될 것 같아 불안합니다&hellip; <del>결국 답은 돈</del></p>
+<p>어떤 분이 클라우드플레어 CDN을 이용하면 https 인증서까지 무료로 이용할 수 있다고 하여 해봤습니다.<br>
+사실 인증서 발급과 적용도 배포만큼 어려웠습니다&hellip;</p>
+<h1 id="프론트엔드">프론트엔드</h1>
+<p>프론트엔드는 리액트를 사용했습니다.<br>
+그냥&hellip; 리액트가 가장 무난하고 많이 쓰여서? 선택했습니다.<br>
+API로 단축된 URL을 받고 QR 코드로 만들어주는 기능을 넣었습니다.<br>
+이용 규칙도 명시했습니다.<br>
+배포는 Vercel을 이용했습니다.<br>
+프론트엔드 깃허브 저장소도 공개되어 있습니다.<br>
+<a href="https://github.com/sunwoo1524/krll-frontend">https://github.com/sunwoo1524/krll-frontend</a></p>
+<h1 id="끝으로">끝으로</h1>
+<p>이 프로젝트를 진행하면서, 정말 많은 것을 배운 것 같습니다.<br>
+도커와 도커 컴포즈 사용법, SQL 문법, 백엔드와 데이터베이스의 연결, 백엔드와 프론트엔드의 분리, 리눅스 서버에서 백엔드 배포 그리고 왜 윈도우가 쓰레기같은지 등&hellip;<br>
+방학이 끝나기 전 성공적으로 프로젝트를 완성하고 배포해서 기분이 정말 좋습니다.<br>
+깃허브 저장소에 이 프로젝트의 모든 코드가 공개되어 있습니다.<br>
+혹시 제 부족한 소스코드가 궁금하신 분은 언제든지 구경하고 참고하고 복붙하셔도 됩니다.</p>
+<p>끝으로 제가 만든 서비스를 홍보하겠습니다.<br>
+긴 글 읽어주셔서 정말 감사드리고 댓글은 언제든지 환영입니다.<br>
+다음 글에서 뵙겠습니다!</p>
+<p>&hellip;</p>
+<h2 id="krll-개인정보-수집-없는-간편한-단축-도메인-서비스">Krll, 개인정보 수집 없는 간편한 단축 도메인 서비스</h2>
+<p>로그인과 회원가입이 필요 없습니다!<br>
+광고가 나오는 중간 페이지가 없습니다!<br>
+개인정보 수집 없는 빠르고 편리한 단축 도메인 서비스를 만나보세요!<br>
+로그인이 필요 없으니 당연히 무료입니다!<br>
+링크 단축과 함께 QR 코드가 생성되어 스마트폰으로도 편하게 열 수 있습니다!<br>
+개인정보 수집 없는 간편한 단축 도메인 서비스 Krll을 지금 만나보세요!<br>
+<a href="https://www.krll.me">https://www.krll.me</a></p>
+</div><script src="https://utteranc.es/client.js"
+        repo="sunwoo1524/blog-comment"
+        issue-term="pathname"
+        label="✨💬✨"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+</article>
+<footer class="py:24">
+    <div class="f:fade-30 f:14 mb:8"></div>
+    <div class="f:fade-60 f:12">Theme <a class="f:bold" href="https://github.com/serkodev/holy" _target="_blank">Holy</a></div>
+</footer></div>
+    </div>
+</body>
+
+</html>

@@ -6,7 +6,25 @@
     <description>Recent content on 맹꽁이의 블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 26 Jul 2023 23:28:42 +0900</lastBuildDate><atom:link href="http://blog.maengkkongi.site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Aug 2023 10:10:11 +0900</lastBuildDate><atom:link href="http://blog.maengkkongi.site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FastAPI로 단축 도메인 서비스 만들기</title>
+      <link>http://blog.maengkkongi.site/posts/log-making-url-shortener-service/</link>
+      <pubDate>Wed, 09 Aug 2023 10:10:11 +0900</pubDate>
+      
+      <guid>http://blog.maengkkongi.site/posts/log-making-url-shortener-service/</guid>
+      <description>단축 도메인 서비스를 만들었습니다.
+단축 도메인 서비스는 긴 URL을 짧은 URL에 연결시켜주는 서비스입니다.
+생각보다 로직이 간단해서 단축 도메인 기능 만들기는 쉬웠지만 제가 코린이인지라 개발 환경 세팅과 데이터베이스 연결, 배포 등 많은 시행착오가 있었습니다.
+기술 스택 Python, FastAPI PostgreSQL React 백엔드 백엔드는 FastAPI를 이용했습니다.
+Flask만큼 쉽고 간단한데다 더 빠르기 때문입니다.
+API 문서 자동으로 만들어주는 기능은 기가 막합니다.
+문서에서 API 테스트도 할 수 있습니다.
+데이터베이스는 PostgreSQL을 이용했습니다.
+배포는 도커를 이용했습니다.
+백엔드를 만들면서 가장 힘들었던 부분은 개발환경 세팅과 배포가 아니었을까 합니다.</description>
+    </item>
+    
     <item>
       <title>Hugo로 개인 블로그 만들기</title>
       <link>http://blog.maengkkongi.site/posts/log-making-my-own-blog/</link>

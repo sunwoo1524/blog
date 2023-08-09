@@ -6,7 +6,61 @@
     <description>Recent content in Tags on 맹꽁이의 블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 26 Jul 2023 23:28:42 +0900</lastBuildDate><atom:link href="http://blog.maengkkongi.site/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Aug 2023 10:10:11 +0900</lastBuildDate><atom:link href="http://blog.maengkkongi.site/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FastAPI</title>
+      <link>http://blog.maengkkongi.site/tags/fastapi/</link>
+      <pubDate>Wed, 09 Aug 2023 10:10:11 +0900</pubDate>
+      
+      <guid>http://blog.maengkkongi.site/tags/fastapi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL</title>
+      <link>http://blog.maengkkongi.site/tags/postgresql/</link>
+      <pubDate>Wed, 09 Aug 2023 10:10:11 +0900</pubDate>
+      
+      <guid>http://blog.maengkkongi.site/tags/postgresql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>http://blog.maengkkongi.site/tags/react/</link>
+      <pubDate>Wed, 09 Aug 2023 10:10:11 +0900</pubDate>
+      
+      <guid>http://blog.maengkkongi.site/tags/react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>URL shortener</title>
+      <link>http://blog.maengkkongi.site/tags/url-shortener/</link>
+      <pubDate>Wed, 09 Aug 2023 10:10:11 +0900</pubDate>
+      
+      <guid>http://blog.maengkkongi.site/tags/url-shortener/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>URL 단축</title>
+      <link>http://blog.maengkkongi.site/tags/url-%EB%8B%A8%EC%B6%95/</link>
+      <pubDate>Wed, 09 Aug 2023 10:10:11 +0900</pubDate>
+      
+      <guid>http://blog.maengkkongi.site/tags/url-%EB%8B%A8%EC%B6%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>단축 도메인</title>
+      <link>http://blog.maengkkongi.site/tags/%EB%8B%A8%EC%B6%95-%EB%8F%84%EB%A9%94%EC%9D%B8/</link>
+      <pubDate>Wed, 09 Aug 2023 10:10:11 +0900</pubDate>
+      
+      <guid>http://blog.maengkkongi.site/tags/%EB%8B%A8%EC%B6%95-%EB%8F%84%EB%A9%94%EC%9D%B8/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hugo</title>
       <link>http://blog.maengkkongi.site/tags/hugo/</link>
